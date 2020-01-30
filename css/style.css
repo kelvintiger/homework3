@@ -17,7 +17,7 @@ body{
   margin: 1.2em;
   background: url("../images/pigeon-background.JPEG") #DDDDDD;
 
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -37,7 +37,7 @@ caption{
   margin:5px 0px;
 }
 
-body > p{
+p{
   color: black;
   font-size: 16px;
   padding-top: 10px;
@@ -51,7 +51,7 @@ a{
 }
 
 a:focus{
-  border: 2px;
+  border: 2px solid black;
 }
 
 tr, td{
@@ -64,8 +64,8 @@ table{
   margin-left: auto;
   margin-right: auto;
   border: 2px solid black;
-
-
+  border-collapse: separate;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .colhead{
@@ -96,32 +96,23 @@ tr:hover{
 }
 
 
-
-/*FIXME BORDER COLLAPSE*/
-
-
-
 thead tr:first-child th:first-child{
   border-spacing: 0px;
-  border-collapse:collapse;
   border-radius: 15px 0 0 0;
 }
 
 thead tr:last-child th:last-child{
   border-spacing: 0px;
-  border-collapse:collapse;
   border-radius: 0 15px 0 0;
 }
 
 tbody tr:last-child(2) th:last-child(2){
   border-spacing: 0px;
-  border-collapse:collapse;
   border-radius: 0 0 0 15px;
 }
 
 tbody tr:last-child th:last-child{
   border-spacing: 0px;
-  border-collapse:collapse;
   border-radius: 0 0 15px 0;
 }
 
@@ -133,5 +124,9 @@ footer{
   min-height: 60px;
   background:black;
   text-align:center;
+  color: white;
+}
+
+footer > p{
   color: white;
 }
